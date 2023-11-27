@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Ejercicio 4</title>
+    <script src="js/functions.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>PRODUCTO MANUFACTURADO</h1>
+    </center>
+
+    <h2>Cargar producto:</h2>
+
+    <center>
+      <table style="width: 80%; font-size: 18px;">
+        <tr>
+          <th>Tiempo de fabricación</th>
+          <th>Denominación</th>
+          <th>Código</th>
+          <th>Precio de venta</th>
+          <th>Margen de ganancia</th>
+          <th>Rubro</th>
+        </tr>
+
+        <tr>
+          <td align="center">
+            <label for="tiempoFabricacion">Tiempo:</label>
+            <input type="number" id="tiempoFabricacion" name="tiempoFabricacion"/><br/>
+          </td>
+
+          <td align="center">
+            <label for="titulo">Denominación:</label>
+            <input type="text" id="denominacion" name="denominacion" size="15" /><br/>
+          </td>
+
+          <td align="center">
+            <label for="titulo">Código:</label>
+            <input type="text" id="codigo" name="codigo" size="15" /><br/>
+          </td>
+
+          <td align="center">
+            <label for="titulo">Precio:</label>
+            <input type="number" step="0.01" id="precio" name="precio"/><br/>
+          </td>
+
+          <td align="center">
+            <label for="titulo">Margen:</label>
+            <input type="number" id="margenGanancia" name="margenGanancia"/><br/>
+          </td>
+
+          <td align="center">
+            <label for="rubro">Rubro:</label>
+            <select id="rubro" required>
+                <option value="1">Agrícola</option>
+                <option value="2">Metalmecánica</option>
+                <option value="3">Alimentaria</option>
+            </select><br>
+          </td>
+        </tr>
+      </table>
+    </center>
+<br>
+<br>
+    <br>
+    <br>
+    <center>
+        <input type="button" value="Cargar" onclick="cargarDatos()">
+    </center>
+  </body>
+</html>
